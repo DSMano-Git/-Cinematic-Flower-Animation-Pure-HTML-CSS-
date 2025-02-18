@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematic Flower Animation</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Cinematic Flower Animation</h1>
+    </header>
+    <main>
+        <div class="flower-container">
+            <div class="stem stem1">
+                <div class="flower">
+                    <div class="petal petal1"></div>
+                    <div class="petal petal2"></div>
+                    <div class="petal petal3"></div>
+                    <div class="petal petal4"></div>
+                    <div class="petal petal5"></div>
+                    <div class="center"></div>
+                </div>
+            </div>
+            <div class="stem stem2">
+                <div class="flower">
+                    <div class="petal petal1"></div>
+                    <div class="petal petal2"></div>
+                    <div class="petal petal3"></div>
+                    <div class="petal petal4"></div>
+                    <div class="petal petal5"></div>
+                    <div class="center"></div>
+                </div>
+            </div>
+            <div class="stem stem3">
+                <div class="flower">
+                    <div class="petal petal1"></div>
+                    <div class="petal petal2"></div>
+                    <div class="petal petal3"></div>
+                    <div class="petal petal4"></div>
+                    <div class="petal petal5"></div>
+                    <div class="center"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ground"></div>
+    </main>
+</body>
+
+</html>
