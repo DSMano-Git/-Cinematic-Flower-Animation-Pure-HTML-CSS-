@@ -1,0 +1,222 @@
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #87CEEB, #B0E0E6);
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            border: 2px solid rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            border-radius: 50px;
+            text-align: center;
+            width: 50%;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+        }
+
+        /* Container for Flowers */
+        .flower-container {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+
+        /* Stem Styling */
+        .stem {
+            position: relative;
+            width: 5px;
+            height: 300px;
+            background: linear-gradient(to right, #228B22, #32CD32);
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transform-origin: bottom;
+        }
+
+        /* Individual swing Animations */
+        .stem1 {
+            animation: swing1 6s ease-in-out infinite;
+        }
+
+        .stem2 {
+            animation: swing2 7s ease-in-out infinite;
+        }
+
+        .stem3 {
+            animation: swing3 5s ease-in-out infinite;
+        }
+
+        @keyframes swing1 {
+
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(5deg);
+            }
+
+            50% {
+                transform: rotate(-5deg);
+            }
+
+            75% {
+                transform: rotate(3deg);
+            }
+        }
+
+        @keyframes swing2 {
+
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(7deg);
+            }
+
+            50% {
+                transform: rotate(-7deg);
+            }
+
+            75% {
+                transform: rotate(4deg);
+            }
+        }
+
+        @keyframes swing3 {
+
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(6deg);
+            }
+
+            50% {
+                transform: rotate(-6deg);
+            }
+
+            75% {
+                transform: rotate(3deg);
+            }
+        }
+
+        /* Flower Styling */
+        .flower {
+            position: absolute;
+            top: -40px;
+            /* Adjusted to sit just above the stem */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 120px;
+            animation: flower-swing 3s ease-in-out infinite;
+            transform-origin: bottom;
+            /* Ensures the flower swings from the stem */
+        }
+
+
+        @keyframes flower-swing {
+
+            0%,
+            100% {
+                transform: translateX(-50%) rotate(0deg);
+            }
+
+            25% {
+                transform: translateX(-50%) rotate(5deg);
+            }
+
+            50% {
+                transform: translateX(-50%) rotate(-5deg);
+            }
+
+            75% {
+                transform: translateX(-50%) rotate(3deg);
+            }
+        }
+
+        /* Petal Styling */
+        .petal {
+            position: absolute;
+            width: 50px;
+            height: 80px;
+            background: linear-gradient(to bottom, #FF69B4, #FF1493);
+            border-radius: 50%;
+            transform-origin: bottom center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .petal1 {
+            transform: rotate(0deg);
+            top: 0;
+            left: 50%;
+            margin-left: -25px;
+        }
+
+        .petal2 {
+            transform: rotate(72deg);
+            top: 0;
+            left: 50%;
+            margin-left: -25px;
+        }
+
+        .petal3 {
+            transform: rotate(144deg);
+            top: 0;
+            left: 50%;
+            margin-left: -25px;
+        }
+
+        .petal4 {
+            transform: rotate(216deg);
+            top: 0;
+            left: 50%;
+            margin-left: -25px;
+        }
+
+        .petal5 {
+            transform: rotate(288deg);
+            top: 0;
+            left: 50%;
+            margin-left: -25px;
+        }
+
+        /* Flower Center */
+        .center {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(circle, #FFD700, #FFA500);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Ground Styling */
+        .ground {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 20vh;
+            background: linear-gradient(to top, #8B4513, #A0522D);
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+        }
